@@ -1,0 +1,101 @@
+.titulos-tips{
+    text-align: center;
+    margin: .625rem auto;
+}
+
+.promocion-tips{
+    width: 80;
+    padding: 1.25rem;
+    border: .125rem solid black;
+    background-color:$color-claro-3;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        button{
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+
+        
+    }
+}
+
+.pasos-tips{
+    text-align: center;
+}
+
+.paso1{
+    margin: .9375rem;
+    padding: .625rem;
+    background-color: $color-claro-2;
+    border: .125rem solid black;
+    border-radius: .625rem;
+    transform: scale(1);
+    transition: transform 0.6s, margin 0.5s;
+    &:hover{
+        transform: scale(1.03);
+        margin: 2.1875rem;
+    }
+    @include grid(repeat(2,1fr),repeat(2,1fr),none,"foto1 titu1" "foto1 parra1",center,center,none,none);
+    align-items: center;
+    justify-items: center;
+    h2{
+        grid-area: titu1;
+        font-size: 2.5rem;
+        text-decoration: underline;
+    }
+    .box-img1-tips{
+        grid-area: foto1;
+        width: 21.875rem;
+        .img1-pasos{
+            width: 100%;
+            border-radius: 1.25rem;
+        }
+    }
+    p{
+        grid-area: parra1;
+        font-size: 1.875rem;
+        text-indent: 1.25rem;
+        align-self: flex-start;
+
+    }
+}
+.paso2{
+    @include grid(repeat(2,1fr),repeat(2,1fr),none,"titu2 foto2" "parra2 foto2",center,center,none,none);
+    @extend .paso1;
+    ;
+    h2{
+        grid-area:titu2 ;
+    }
+    div{
+        grid-area:foto2 ;
+        @extend .box-img1-tips;
+        img{
+            @extend .img1-pasos;
+        }
+    }
+    p{
+        grid-area: parra2;
+    }
+}
+.paso3{
+    @include grid(repeat(2,1fr),repeat(2,1fr),none,"foto3 titu3" "foto3 parra3",center,center,none,none);
+    @extend .paso1;
+    h2{
+        grid-area:titu3 ;
+    }
+    div{
+        grid-area:foto3 ;        
+        @extend .box-img1-tips;
+        img{
+            @extend .img1-pasos;
+        }
+    }
+    p{
+        grid-area: parra3;
+    }
+}

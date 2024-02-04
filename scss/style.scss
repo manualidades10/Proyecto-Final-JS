@@ -1,0 +1,65 @@
+/** llamado variables y mixins**/
+
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+
+/** llamado reset y tipografias **/
+
+@import "./base/reset";
+@import "./base/typo";
+
+/** llamado layout **/
+
+@import "./layout/body";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/main-index";
+@import "./layout/main-contacto";
+@import "./layout/main-tienda";
+@import "./layout/main-yo";
+@import "./layout/main-matetips";
+@import "./layout/main-carrito";
+
+/** llamdo componentes **/
+
+@import "./components/navbar";
+@import "./components/botones";
+@import "./components/carrusel";
+
+/** llamado media-queries **/
+
+@import "./layout/media/index/index-media1440";
+@import "./layout/media/header-media1024";
+@import "./layout/media/index/index-media1024";
+@import "./layout/media/yo/media1024";
+@import "./layout/media/header-media768";
+@import "./layout/media/index/index-media768";
+@import "./layout/media/mate-tips/media768";
+@import "./layout/media/yo/media768";
+@import "./layout/media/header-media425";
+@import "./layout/media/index/index-media425";
+@import "./layout/media/mate-tips/media425";
+@import "./layout/media/yo/media425";
+@import "./layout/media/footer-media425";
+@import "./layout/media/mate-tips/media375";
+@import "./layout/media/yo/media375";
+@import "./layout/media/index/index-media320";
+@import "./layout/media/mate-tips/media320px";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

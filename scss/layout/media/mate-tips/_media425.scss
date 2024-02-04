@@ -1,0 +1,16 @@
+@media (max-width:425px){
+    .promocion-tips{
+        div{
+            h2{
+                font-size: 1.25rem;
+            }
+            button{
+                font-size: .9375rem;
+            }
+        }
+    }
+    .paso1{
+        display: flex;
+        flex-direction: column;
+    }
+}

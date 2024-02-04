@@ -1,0 +1,25 @@
+@media (max-width:768px){
+    .seccion-yo-primera{
+        h2{
+
+            font-size: 1.75rem;
+        }
+        .yo-img{
+            width: 21.875rem ;
+            img{
+                width: 100%;
+            }
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+    .seccion-yo-segunda{
+        .isft-img{
+            width:21.875rem;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

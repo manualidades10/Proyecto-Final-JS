@@ -1,0 +1,27 @@
+footer{
+    background-color: $color-claro-1;
+    padding: 1.25rem;
+    border: .125rem solid black;
+    .logo-wpp{
+        position: fixed;
+        bottom: 1.25rem;
+        left: 1.25rem;
+        a{
+            img{
+                transform: scale(1) rotate(0deg);
+                transition: transform 0.3s;
+                &:hover{
+                    transform: scale(1.1) rotate(360deg);
+                }
+            }
+        }
+    }
+    .redes-footer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+        gap:1.25rem;
+    }
+
+}

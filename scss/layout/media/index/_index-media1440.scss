@@ -1,0 +1,9 @@
+@media(max-width:1440px){
+    .seccion-destacados{
+        display: flex;
+        gap: 10px;
+        .card-index{
+            padding: .625rem;
+        }
+    }
+}

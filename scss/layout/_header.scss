@@ -1,0 +1,121 @@
+header{
+    .seccion-redes-header{
+        background-color: $color-claro-1;
+        padding: .3125rem 1.5625rem;
+        h3{
+            text-align: center;
+        }
+        div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 20px;
+        }
+    }
+}
+
+.seccion-titulo-header{
+    width: 100%;
+    padding: 1.25rem;
+    border: .125rem solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "search logo titulo "
+    ;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    .buscador{
+        width: 100%;
+        grid-area: search;
+        display: flex;
+        justify-content: center;
+        
+        input{
+            width: 31.25rem;
+            height: 3.125rem;
+            padding: .625rem;
+            border: .125rem solid black;
+            font-size: 20px;
+        }
+        button{
+            height: 3.125rem;
+            padding: .625rem;
+            border: .125rem solid black;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .logo-header{
+        grid-area: logo;
+    }
+    h2{
+        text-align: center;
+        grid-area: titulo;
+        font-size: 6.25rem;
+    }
+}
+
+/** ANIMACION-TITULO-HEADER**/
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /** ANIMACION-LOGO-MATE **/
+  .rotate-in-ver {
+    -webkit-animation: rotate-in-ver 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: rotate-in-ver 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+@-webkit-keyframes rotate-in-ver {
+  0% {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-ver {
+  0% {
+    -webkit-transform: rotateY(-360deg);
+            transform: rotateY(-360deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+    opacity: 1;
+  }
+}

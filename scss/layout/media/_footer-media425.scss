@@ -1,0 +1,16 @@
+@media(max-width:425px){
+    footer{
+        padding: .625rem;
+        .redes-footer{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            gap:1.25rem;
+            img{
+                width: 3.125rem;
+            }
+        }
+    
+    }
+}

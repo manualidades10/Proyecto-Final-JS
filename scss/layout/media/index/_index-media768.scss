@@ -1,0 +1,33 @@
+@media (max-width:768px){
+    
+    div{
+        .carrusel{
+            height: 25rem;
+        }
+        .boton-carrusel{
+            height: 21.875rem;
+        }
+    }
+        
+    
+    .seccion-destacados{
+        .card-index{
+            height: 16.875rem;
+            .card-text-index{
+                h3{
+                    font-size: 1.25rem;
+                }
+                h4{
+                    font-size: 1.125rem;
+                }
+                h5{
+                    font-size: 1rem;
+                }  
+                .boton-tienda{
+                    padding: .625rem;
+                    font-size: .9375rem;
+                } 
+            }
+        }
+    }
+}

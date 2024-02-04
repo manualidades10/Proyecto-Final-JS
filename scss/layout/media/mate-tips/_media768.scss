@@ -1,0 +1,39 @@
+@media (max-width:768px){
+    /** copiado y pegado **/
+    .paso1{
+        margin: .9375rem;
+        padding: .625rem;
+        background-color: $color-claro-2;
+        border: .125rem solid black;
+        border-radius: .625rem;
+        transform: scale(1);
+        transition: transform 0.6s, margin 0.5s;
+        &:hover{
+            transform: scale(1.03);
+            margin: 2.1875rem;
+        }
+        @include grid(repeat(2,1fr),repeat(2,1fr),none,"foto1 titu1" "foto1 parra1",center,center,none,none);
+        align-items: center;
+        justify-items: center;
+        h2{
+            grid-area: titu1;
+            font-size: 1.875rem;
+            text-decoration: underline;
+        }
+        .box-img1-tips{
+            grid-area: foto1;
+            width: 21.875rem;
+            .img1-pasos{
+                width: 100%;
+                border-radius: 1.25rem;
+            }
+        }
+        p{
+            grid-area: parra1;
+            font-size: 1.25rem;
+            text-indent: 1.25rem;
+            align-self: flex-start;
+    
+        }
+    }
+}

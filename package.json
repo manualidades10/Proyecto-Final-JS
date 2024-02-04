@@ -1,0 +1,11 @@
+{
+  "name": "proyectofinal",
+  "version": "1.0.0",
+  "description": "- SASS (mixin, extends, variables y nesting)\r - Complementos de BOOTSTRAP perzonalizados\r - LOS 5 HTML SON 100% RESPONSIVE (apartir de 1440px para abajo)\r - ANIMACIONES\r - SEO\r - Grids y Flexbox\r - Git y GitHub\r - Deploy en servidor (Netlify)\r #### UN PLACER HABER COMPARTIDO ESTE CURSO CON USTEDES :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

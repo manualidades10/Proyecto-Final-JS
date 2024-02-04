@@ -1,0 +1,113 @@
+.seccion-sobremi{
+    height: 100%;
+    h1{
+        text-align: center;
+        margin-top: 1.875rem;
+    }
+}
+
+.seccion-yo-primera{
+    width: 100%;
+    height: 31.25rem;
+    margin: 5% auto;
+    padding: 1.875rem;
+    background-color: $color-claro-2;
+    @include grid(repear(2, 1fr), repeat(2, 1fr), none,"foto1 subt1" "foto1 parra1", center, center,.625rem,none);
+    align-items: center;
+    justify-items: center;    
+    h2{
+        grid-area: subt1;
+        font-size: 2.5rem;
+        transform: scale(1);
+        transition: transform 0.5s;
+        &:hover{
+            transform: scale(1.3);
+        }
+    }
+    .yo-img{
+        grid-area: foto1;
+        display: flex;
+        justify-content: center;
+        }
+        img{
+            width: 55%;
+            border-radius: 1.25rem;
+            transform: scale(0.9) rotateY(0deg);
+            transition: transform 0.5s;
+            &:hover{
+            transform: scale(1) rotateY(360deg);
+            }
+        }
+    p{
+        grid: parra1;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
+.seccion-yo-segunda{
+    @extend .seccion-yo-primera;
+    @include grid(repear(2, 1fr), repeat(2, 1fr), none,"subt2 foto2" "parra2 foto2", center, center,none,none);
+    align-items: center;
+    justify-items: center;
+    h2{
+        grid-area: subt2;
+        font-size: 2.5rem;
+        text-align: center;
+        transform: scale(1);
+        transition: transform 0.5s;
+        &:hover{
+            transform: scale(1.3);
+        }
+    }
+    .isft-img{
+        grid-area: foto2;
+        display: flex;
+        justify-content: center;
+        img{
+            width: 55%;
+            border-radius: 1.25rem;
+            transform: scale(0.9) rotateY(0deg);
+            transition: transform 0.5s;
+            &:hover{
+            transform: scale(1) rotateY(360deg);
+            }
+        }
+    }
+    p{
+        grid: parra2;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
+/** ANIMACION-YO **/
+.slide-in-bck-center {
+	-webkit-animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-bck-center 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+ @-webkit-keyframes slide-in-bck-center {
+    0% {
+      -webkit-transform: translateZ(600px);
+              transform: translateZ(600px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bck-center {
+    0% {
+      -webkit-transform: translateZ(600px);
+              transform: translateZ(600px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  

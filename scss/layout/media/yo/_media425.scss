@@ -1,0 +1,23 @@
+@media (max-width:425px){
+    .seccion-yo-primera{
+        height: 33.75rem;
+        display: flex;
+        flex-direction: column;
+        h2{
+            font-size: 1.25rem
+
+        }
+        .yo-img{
+            width: 15.625rem;
+        }
+        p{
+            font-size: .9375rem
+        }
+    }
+    .seccion-yo-segunda{
+        @extend .seccion-yo-primera;
+        .isft-img{
+           width: 15.625rem;
+        }
+    }
+}

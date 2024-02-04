@@ -1,0 +1,26 @@
+@media (max-width:425px){
+    header{
+        .seccion-redes-header{
+            div{
+                justify-content: center;
+            }
+        }
+    }
+    
+    .seccion-titulo-header{
+        padding: .625rem;
+        @include grid(1fr, repeat(2, 1fr), none, "img1" "busca1", center, center, none,none);
+        .buscador{
+            grid-area: busca1;
+        }
+        .logo-header{
+            grid-area: img1;
+            img{
+                width: 9.375rem;
+            }
+        }
+        h2{
+            display: none;
+        }
+    }
+}

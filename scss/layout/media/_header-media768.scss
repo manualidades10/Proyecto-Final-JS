@@ -1,0 +1,22 @@
+@media (max-width:768px){
+    .seccion-redes-header{
+        div{
+            img{
+                width: 3.125rem;
+            }
+        }
+    }
+    .seccion-titulo-header{
+        .buscador{
+            width: 18.75rem;
+        }
+        .logo-header{
+            img{
+                width: 12.5rem;
+            }
+        }
+        h2{
+            font-size: 3.4375rem;
+        }
+    }
+}
